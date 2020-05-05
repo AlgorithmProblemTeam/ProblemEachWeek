@@ -95,7 +95,7 @@ var calCount = 0
  */
 fun changeMoney(targetAmount: Long): Int {
     var finalCount = Int.MAX_VALUE // 由于要计算出最小值，所以先初始化为最大值
-    if (targetAmount == 0L) return 0 // 贼
+    if (targetAmount == 0L) return 0 // 
     if (targetAmount < 0) return -1
     for (c in change) {
         val subRes = changeMoney(targetAmount - c)
